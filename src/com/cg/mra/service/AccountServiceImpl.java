@@ -5,9 +5,10 @@ import java.util.Map;
 
 import com.cg.mra.beans.Account;
 import com.cg.mra.dao.*;
+import com.cg.mra.jdbcdao.*;
 
 public class AccountServiceImpl implements AccountService {
-AccountDao ad=new AccountDaoImpl();
+AccountDao2 ad=new AccountDaoImpl2();
 Account account=new Account();
 
 public Account getAccountDetails(String mobileNo) {
